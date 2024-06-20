@@ -37,8 +37,8 @@ const ArticlePage = () => {
         <div className="card my-3">
             <img src={Article.image} alt="article" className="img-fluid" />
             <div className="card-body">
-                <h5 className="card-title text-center fw-bold custom-title">{Article.name}</h5>
-                <p className="card-text custom-description">{Article.description}</p>
+                <h5 className="card-title text-center fw-bold custom-title   malayalam-text">{Article.name}</h5>
+                <p className="card-text custom-description   malayalam-text">{Article.description}</p>
                 <p className="card-text">
                     <small className="text-body-secondary">Last updated 3 mins ago</small>
                 </p>

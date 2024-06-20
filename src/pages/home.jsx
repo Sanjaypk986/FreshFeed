@@ -22,7 +22,7 @@ export async function loader () {
 const Home = () => {
      const {mainArticle,subArticles} = useLoaderData()
   return (
-    <main className='container'>
+    <main className='container my-3'>
         <section>
             <h2 className='text-center my-3 pb-2 border-bottom'><span className='text-success text-bolder fs-1 px-2'>|</span>Happening...</h2>
             <div className="row mx-auto pr-2 items-center d-flex align-items-stretch">

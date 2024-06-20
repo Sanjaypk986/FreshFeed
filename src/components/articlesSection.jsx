@@ -19,7 +19,7 @@ const ArticlesSection = ({ article }) => {
           alt="articles"
         />
         <div className="card-body">
-          <h5 className="card-title article-title">
+          <h5 className="card-title article-title malayalam-text">
             {truncateText(article.name, maxTitleLength)}
           </h5>
         </div>

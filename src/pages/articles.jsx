@@ -29,7 +29,7 @@ const Articles = () => {
   }
 
   return (
-    <main className="container">
+    <main className="container my-3">
       <section>
         <h2 className="text-center my-3 pb-2 border-bottom">
           <span className="text-success text-bolder fs-1 px-2">|</span>
