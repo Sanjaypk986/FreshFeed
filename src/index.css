@@ -107,3 +107,14 @@
 .btn {
   margin-top: 20px;
 }
+
+
+/* signup */
+.widthSignup{
+  width: 100%;
+}
+@media (min-width: 576px) {
+  .widthSignup{
+    width: 50%;
+  }
+}

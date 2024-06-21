@@ -14,6 +14,8 @@ import Articles,{loader as articlesloader} from './pages/articles';
 import Authors,{loader as authorsloader} from './pages/authors';
 import ArticlePage,  {loader as articleloader} from './pages/articlePage';
 import AuthorPage,{loader as authorloader} from './pages/authorPage';
+import Login from './pages/login';
+import SignUp from './pages/signUp';
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
         path: "/authors/:authorId",
         element: <AuthorPage />,
         loader: authorloader
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
       },
     ],
   }, 
