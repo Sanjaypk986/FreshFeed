@@ -16,6 +16,7 @@ import ArticlePage,  {loader as articleloader} from './pages/articlePage';
 import AuthorPage,{loader as authorloader} from './pages/authorPage';
 import Login from './pages/login';
 import SignUp from './pages/signUp';
+import LogOut from './pages/logOut';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/logout",
+        element: <LogOut />,
       },
     ],
   }, 
