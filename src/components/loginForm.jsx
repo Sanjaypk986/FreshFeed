@@ -14,7 +14,7 @@ export default function LoginForm() {
 
   const onSubmit = async(data) => {
     try {
-        const response = await axios.post("http://localhost:3000/auth/login", data);
+        const response = await axios.post("http://localhost:3000/auth/login", data,{withCredentials:true});
         navigate('/');
         console.log('login');
       } catch (error) {

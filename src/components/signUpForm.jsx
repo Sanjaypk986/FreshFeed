@@ -15,7 +15,7 @@ export default function SignUpForm() {
   const onSubmit = (data) => {
     axios.post("http://localhost:3000/users", data)
       .then(() => {
-        navigate('/')
+        navigate('/login')
         reset();
       })
       .catch((error) => console.log(error));
