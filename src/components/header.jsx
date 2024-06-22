@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css';
 
-const Header = () => {
+const Header = ({verify}) => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-custom">
@@ -27,9 +27,14 @@ const Header = () => {
             <li className="nav-item">
               <Link className="nav-link" to="/signup">Sign Up</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/login">Login</Link>
-            </li>
+            {
+              verify ? (<li className="nav-item">
+              <Link className="nav-link" to="/logout">Logout</Link>
+            </li>):
+            (<li className="nav-item">
+            <Link className="nav-link" to="/login">Login</Link>
+          </li>)
+            }
           </ul>
         </div>
       </div>

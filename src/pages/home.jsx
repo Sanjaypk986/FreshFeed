@@ -10,7 +10,6 @@ export async function loader () {
         const Articles = response.data
         const mainArticle = Articles.find(article => article.isMain); // Assuming articles have "isMain" property
         const subArticles = Articles.filter(article => article.sub);
-        console.log(subArticles);
         return { mainArticle,subArticles};
     }
     catch(error){

@@ -8,7 +8,6 @@ export async function loader() {
         const articlesAll = response.data
         const articles = articlesAll.filter(article => !article.main && !article.sub);
         const subArticles = articlesAll.filter(article => article.sub);
-    console.log(articles); // Logging fetched data
     return { articles,subArticles }; // Returning fetched data
   } catch (error) {
     console.error(error); // Logging error
