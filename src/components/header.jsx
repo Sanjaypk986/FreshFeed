@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './header.css';
+import DateTimeDisplay from './date';
 
 const Header = ({verify}) => {
   return (
@@ -23,6 +24,7 @@ const Header = ({verify}) => {
               <Link className="nav-link" to="/authors">Authors</Link>
             </li>
           </ul>
+          <DateTimeDisplay />
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/signup">Sign Up</Link>
