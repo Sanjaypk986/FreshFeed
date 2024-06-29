@@ -12,7 +12,7 @@ const Root = () => {
   useEffect(() => {
     const verifyUser = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/auth/verify", {
+        const response = await axios.get(`${import.meta.env.VITE_BASE_API}/auth/verify`, {
           withCredentials: true,
         });
         const verifyLoggedIn = response.data.verified;

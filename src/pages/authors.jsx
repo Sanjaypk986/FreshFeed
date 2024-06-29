@@ -6,7 +6,7 @@ import { useLoaderData } from "react-router-dom";
 export async function loader () {
 
   try{
-      const response= await axios.get('http://localhost:3000/authors');
+      const response= await axios.get(`${import.meta.env.VITE_BASE_API}/authors`);
       const authors = response.data
       return {authors};
   }

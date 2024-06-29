@@ -4,7 +4,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import ArticlesSection from "../components/articlesSection";
 export async function loader() {
   try {
-    const response= await axios.get('http://localhost:3000/articles');
+    const response= await axios.get(`${import.meta.env.VITE_BASE_API}/articles`);
         const articlesAll = response.data
         const articles = articlesAll.filter(article => !article.main && !article.sub);
         const subArticles = articlesAll.filter(article => article.sub);

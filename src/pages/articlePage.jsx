@@ -6,7 +6,7 @@ import { Link, useLoaderData } from "react-router-dom";
 export async function loader({ params }) {
   try {
     const response = await axios.get(
-      `http://localhost:3000/articles/${params.articleId}`
+      `${import.meta.env.VITE_BASE_API}/articles/${params.articleId}`
     );
     const Article = response.data;
     console.log(Article);

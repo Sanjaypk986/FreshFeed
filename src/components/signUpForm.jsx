@@ -13,7 +13,7 @@ export default function SignUpForm() {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:3000/users", data)
+    axios.post(`${import.meta.env.VITE_BASE_API}/users`, data)
       .then(() => {
         navigate('/login')
         reset();

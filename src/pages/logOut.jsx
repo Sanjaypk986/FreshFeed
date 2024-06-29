@@ -9,7 +9,7 @@ const LogOut = () => {
   const navigate = useNavigate();
   useEffect(() => {
     try {
-      axios.get("http://localhost:3000/auth/logout", { withCredentials: true });
+      axios.get(`${import.meta.env.VITE_BASE_API}/auth/logout`, { withCredentials: true });
       dispatch(changeLogginStatus(false))
       navigate("/login");
     } catch (error) {

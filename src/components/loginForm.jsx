@@ -18,7 +18,7 @@ export default function LoginForm() {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/auth/login",
+        `${import.meta.env.VITE_BASE_API}/auth/login`,
         data,
         { withCredentials: true }
       );
